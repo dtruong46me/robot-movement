@@ -34,9 +34,15 @@ class Graph:
                 [u,v,w] = [int(x) for x in f.readline().split()]
                 self.edge[u].append((v,w))
                 self.edge[v].append((u,w))
+            
+            
+            [self.a,self.b] = [int(x) for x in f.readline().split()]
+            [self.c,self.d] = [int(x) for x in f.readline().split()]
+            self.r = int(f.readline())
 
 # if __name__ == '__main__':
 #     filename = 'data_1.txt'
 
 #     G = Graph(filename)
 #     print(G.edge)
+#     print(G.a,G.b,G.c,G.d,G.r)
